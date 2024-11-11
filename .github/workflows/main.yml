@@ -20,7 +20,7 @@ jobs:
 
       - name: Download project-configuration-file
         run: | 
-          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-iwts/main/ontorefine-configuration.json' >> config.json
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-iwts/main/ontorefine-config.json' >> config.json
 
       - name: Fetch entities
         run: |
@@ -74,6 +74,6 @@ jobs:
         with:
           artifact: iwts-ca
           publisher: "${{ secrets.PUBLISHER_URI_GREGORY }}"
-          downloadUrl: https://raw.githubusercontent.com/culturecreates/artsdata-planet-iwts/main/output/iwts_data.ttl
+          downloadUrl: https://raw.githubusercontent.com/culturecreates/artsdata-planet-iwts/main/outputs/iwts_data.ttl
 
 
