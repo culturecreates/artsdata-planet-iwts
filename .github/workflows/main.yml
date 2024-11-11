@@ -1,0 +1,79 @@
+name: Fetch IWTS entities
+
+on:
+  workflow_dispatch:
+
+jobs:
+  process-using-ontorefine:
+    runs-on: ubuntu-latest
+    container:
+      image: ontotext/refine:1.2.1
+      options: --user root
+      ports:
+        - 7333:7333
+    steps:
+      - name: Install requirements
+        run: apk update && apk add curl && apk add util-linux && apk add jq
+
+      - name: Run ontorefine server
+        run: /opt/ontorefine/dist/bin/ontorefine &
+
+      - name: Download project-configuration-file
+        run: | 
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-iwts/main/ontorefine-configuration.json' >> config.json
+
+      - name: Fetch entities
+        run: |
+            curl https://iwanttoshowcase.ca/apiiwts.php?api_key=${{secrets.APIIWTS_KEY}} -o iwts_data.json
+
+      - name: Transform into RDF
+        run: |
+              mkdir -p outputs
+
+              /opt/ontorefine/dist/bin/ontorefine-cli \
+              transform iwts_data.json \
+              -u http://localhost:7333 \
+              --configurations config.json \
+              -f json >> outputs/iwts_data.ttl
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+            name: ttl-file
+            path: outputs/
+
+  commit-and-push:
+      runs-on: ubuntu-latest
+      needs: process-using-ontorefine
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v4
+
+        - name: Download artifacts
+          id: download-step
+          uses: actions/download-artifact@v4
+          with:
+            name: ttl-file
+            path: outputs/
+
+        - name: Commit files to GitHub
+          run: |
+            git pull
+            git config --global user.email "actions@github.com"
+            git config --global user.name "GitHub Actions"
+            git add "outputs/"
+            git commit -m "Push Entities from IWTS"
+            git push
+
+  artsdata-push:
+    runs-on: ubuntu-latest
+    needs: commit-and-push
+    steps:
+      - name: Action setup
+        uses: culturecreates/artsdata-pipeline-action@v2
+        with:
+          artifact: iwts-ca
+          publisher: "${{ secrets.PUBLISHER_URI_GREGORY }}"
+          downloadUrl: https://raw.githubusercontent.com/culturecreates/artsdata-planet-iwts/main/output/iwts_data.ttl
+
+
