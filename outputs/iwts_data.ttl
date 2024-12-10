@@ -2,220 +2,306 @@
 @prefix iwts: <https://iwanttoshowcase.ca/vocabulary#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix iwts_person: <https://iwanttoshowcase.ca/person/> .
+@prefix iwts_performer: <https://iwanttoshowcase.ca/performerid/> .
 
-iwts_person:919 a schema:Person;
+iwts_performer:919 a schema:Person;
   schema:name "JJ Voss";
   schema:description """With over two decades of dedication to his craft, 9 time SCMA award winner JJ Voss has taken his passion for songwriting and performing, along with his many experiences in life, to build an authentic heartfelt solo career rooted in the soil of the working class. 
 Following in the footprints of many blue collar poets before him, JJ has toured the world sharing his truths through worn in chords and a whiskey flavoured, veteran's voice. Honest and true to his word, he goes all-in with every lyric and tells the stories that we all need to hear.""";
-  schema:address _:f08261ee02e14d278e5829abb38e6e651;
-  iwts:birthProvince "SK";
-  iwts:birthCountry "CA";
-  schema:url "http://www.jjvoss.com", "https://www.jjvoss.com/epk", "https://www.youtube.com/playlist?list=PLlk85H6298cxjcC56F8MOAQoNrrjtO1gu",
-    "https://www.facebook.com/JJVoss/", "";
-  schema:additionalType "Music"^^skos:Concept;
+  schema:url "http://www.jjvoss.com";
+  schema:additionalType "http://kg.artsdata.ca/resource/MusicPerformance"^^skos:Concept;
   schema:genre "Country";
   iwts:pronouns "";
-  iwts:consent "agree_v_1.0" .
+  iwts:consent "agree_v_1.0";
+  schema:workLocation _:89a91839f4204c0689e9ab1ac79a4aec1;
+  schema:birthPlace _:89a91839f4204c0689e9ab1ac79a4aec3;
+  schema:sameAs "https://www.jjvoss.com/epk", "https://www.youtube.com/playlist?list=PLlk85H6298cxjcC56F8MOAQoNrrjtO1gu",
+    "https://www.facebook.com/JJVoss/", "" .
 
-_:f08261ee02e14d278e5829abb38e6e651 schema:addressRegion "SK";
-  schema:addressCountry "CA" .
+_:89a91839f4204c0689e9ab1ac79a4aec1 schema:address _:89a91839f4204c0689e9ab1ac79a4aec2 .
 
-iwts_person:4296 a schema:Person;
+_:89a91839f4204c0689e9ab1ac79a4aec2 schema:addressCountry "CA";
+  schema:addressRegion "SK" .
+
+_:89a91839f4204c0689e9ab1ac79a4aec3 schema:address _:89a91839f4204c0689e9ab1ac79a4aec4 .
+
+_:89a91839f4204c0689e9ab1ac79a4aec4 schema:addressCountry "CA";
+  schema:addressRegion "SK" .
+
+iwts_performer:4296 a schema:PerformingGroup;
   schema:name "Leaf Rapids";
   schema:description """Leaf Rapids is a 4 piece Winnipeg band featuring award winning songwriting, sweet and smoky harmonies, luscious guitar licks and the eerie sound of the theremin. Keri’s stage banter has been described as heartfelt and often hilarious, as she weaves incredible and bizarre family histories into the show, along with keen observations that inspired the songs into being. She loves how this inspires audiences to share their own incredible stories, we all have them.
 Career highlights include winning a JUNO Award and a cameo in the movie Cool Runnings.""";
-  schema:address _:f08261ee02e14d278e5829abb38e6e652;
-  iwts:birthProvince "";
-  iwts:birthCountry "";
-  schema:url "http://www.leafrapids.org", "https://ffm.to/velvetpaintings", "https://www.facebook.com/leafrapidsmusic",
-    "https://www.youtube.com/channel/UCFRvUD5lEh4mVZ1MNMrN8hg", "https://www.instagram.com/leafrapidsmusic";
-  schema:additionalType "Music"^^skos:Concept;
+  schema:url "http://www.leafrapids.org";
+  schema:additionalType "http://kg.artsdata.ca/resource/MusicPerformance"^^skos:Concept;
   schema:genre "Folk/Bluegrass/Americana";
   iwts:pronouns "";
-  iwts:consent "agree_v_1.0" .
+  iwts:consent "agree_v_1.0";
+  schema:workLocation _:89a91839f4204c0689e9ab1ac79a4aec5;
+  schema:birthPlace _:89a91839f4204c0689e9ab1ac79a4aec7;
+  schema:sameAs "https://ffm.to/velvetpaintings", "https://www.facebook.com/leafrapidsmusic",
+    "https://www.youtube.com/channel/UCFRvUD5lEh4mVZ1MNMrN8hg", "https://www.instagram.com/leafrapidsmusic" .
 
-_:f08261ee02e14d278e5829abb38e6e652 schema:addressRegion "";
-  schema:addressCountry "CA" .
+_:89a91839f4204c0689e9ab1ac79a4aec5 schema:address _:89a91839f4204c0689e9ab1ac79a4aec6 .
 
-iwts_person:4358 a schema:Person;
+_:89a91839f4204c0689e9ab1ac79a4aec6 schema:addressCountry "CA";
+  schema:addressRegion "MB" .
+
+_:89a91839f4204c0689e9ab1ac79a4aec7 schema:address _:89a91839f4204c0689e9ab1ac79a4aec8 .
+
+_:89a91839f4204c0689e9ab1ac79a4aec8 schema:addressCountry "";
+  schema:addressRegion "" .
+
+iwts_performer:4358 a schema:PerformingGroup;
   schema:name "DuffleBag Theatre";
   schema:description "Stories come to life with DuffleBag Theatre! Their hilariously engaging introductions to the classics make every audience member part of the performance. Forget about passively watching; DuffleBag’s shows are all about fun, innovation, and joyful participation.";
-  schema:address _:f08261ee02e14d278e5829abb38e6e653;
-  iwts:birthProvince "";
-  iwts:birthCountry "";
-  schema:url "http://www.dufflebag.com", "https://www.kbamonline.com/#/dufflebag-theatre/",
-    "";
-  schema:additionalType "Theatre"^^skos:Concept;
+  schema:url "http://www.dufflebag.com";
+  schema:additionalType "http://kg.artsdata.ca/resource/TheatrePerformance"^^skos:Concept;
   schema:genre "Comedy";
   iwts:pronouns "";
-  iwts:consent "agree_v_1.0" .
+  iwts:consent "agree_v_1.0";
+  schema:workLocation _:89a91839f4204c0689e9ab1ac79a4aec9;
+  schema:birthPlace _:89a91839f4204c0689e9ab1ac79a4aec11;
+  schema:sameAs "https://www.kbamonline.com/#/dufflebag-theatre/", "" .
 
-_:f08261ee02e14d278e5829abb38e6e653 schema:addressRegion "";
-  schema:addressCountry "CA" .
+_:89a91839f4204c0689e9ab1ac79a4aec9 schema:address _:89a91839f4204c0689e9ab1ac79a4aec10 .
 
-iwts_person:5180 a schema:Person;
+_:89a91839f4204c0689e9ab1ac79a4aec10 schema:addressCountry "CA";
+  schema:addressRegion "ON" .
+
+_:89a91839f4204c0689e9ab1ac79a4aec11 schema:address _:89a91839f4204c0689e9ab1ac79a4aec12 .
+
+_:89a91839f4204c0689e9ab1ac79a4aec12 schema:addressCountry "";
+  schema:addressRegion "" .
+
+iwts_performer:5180 a schema:Person;
   schema:name "Karla Kloeble";
   schema:description "Meet Karla Kloeble, A dynamic and inspiring individual! Her passion for hula-hooping was sparked immediately upon her first encounter with a hula-hoop in 2011. One year later, Karla co-founded the Saskatoon Hoop Community and has since expanded her career as an independent artist known as Hula-Hoopster. Karla is a lifelong student and teacher of movement. Her 20+ years of dance training and performance, and 10+ years of contemporary circus artistry, blend into an accessible form of entertainment for all. “Get in on the fun, get into a HOOP!”";
-  schema:address _:f08261ee02e14d278e5829abb38e6e654;
-  iwts:birthProvince "SK";
-  iwts:birthCountry "CA";
-  schema:url "http://www.hulahoopster.com", "";
-  schema:additionalType "Family/Young Audience"^^skos:Concept;
+  schema:url "http://www.hulahoopster.com";
+  schema:additionalType "http://kg.artsdata.ca/resource/ChildrensEvent"^^skos:Concept;
   schema:genre "Circus";
   iwts:pronouns "she/her";
-  iwts:consent "agree_v_1.0" .
+  iwts:consent "agree_v_1.0";
+  schema:workLocation _:89a91839f4204c0689e9ab1ac79a4aec13;
+  schema:birthPlace _:89a91839f4204c0689e9ab1ac79a4aec15;
+  schema:sameAs "" .
 
-_:f08261ee02e14d278e5829abb38e6e654 schema:addressRegion "SK";
-  schema:addressCountry "CA" .
+_:89a91839f4204c0689e9ab1ac79a4aec13 schema:address _:89a91839f4204c0689e9ab1ac79a4aec14 .
 
-iwts_person:6821 a schema:Person;
+_:89a91839f4204c0689e9ab1ac79a4aec14 schema:addressCountry "CA";
+  schema:addressRegion "SK" .
+
+_:89a91839f4204c0689e9ab1ac79a4aec15 schema:address _:89a91839f4204c0689e9ab1ac79a4aec16 .
+
+_:89a91839f4204c0689e9ab1ac79a4aec16 schema:addressCountry "CA";
+  schema:addressRegion "SK" .
+
+iwts_performer:6821 a schema:PerformingGroup;
   schema:name "Molly Wilson";
   schema:description "Molly Wilson is a dynamic actress, singer, and songwriter, from Chilliwack, Canada. An award-winning performer, Molly has entertained audiences in the UK, US, and Canada. Shy is described as “a charming powerhouse performer with a voice that takes your breath away.”?";
-  schema:address _:f08261ee02e14d278e5829abb38e6e655;
-  iwts:birthProvince "";
-  iwts:birthCountry "";
-  schema:url "http://www.mollyscomedycabaret.com", "";
-  schema:additionalType "Variety"^^skos:Concept;
+  schema:url "http://www.mollyscomedycabaret.com";
+  schema:additionalType "http://kg.artsdata.ca/resource/VarietyShow"^^skos:Concept;
   schema:genre "Cabaret";
   iwts:pronouns "";
-  iwts:consent "agree_v_1.0" .
+  iwts:consent "agree_v_1.0";
+  schema:workLocation _:89a91839f4204c0689e9ab1ac79a4aec17;
+  schema:birthPlace _:89a91839f4204c0689e9ab1ac79a4aec19;
+  schema:sameAs "" .
 
-_:f08261ee02e14d278e5829abb38e6e655 schema:addressRegion "";
-  schema:addressCountry "CA" .
+_:89a91839f4204c0689e9ab1ac79a4aec17 schema:address _:89a91839f4204c0689e9ab1ac79a4aec18 .
 
-iwts_person:7182 a schema:Person;
+_:89a91839f4204c0689e9ab1ac79a4aec18 schema:addressCountry "CA";
+  schema:addressRegion "BC" .
+
+_:89a91839f4204c0689e9ab1ac79a4aec19 schema:address _:89a91839f4204c0689e9ab1ac79a4aec20 .
+
+_:89a91839f4204c0689e9ab1ac79a4aec20 schema:addressCountry "";
+  schema:addressRegion "" .
+
+iwts_performer:7182 a schema:Person;
   schema:name "Nico Rhodes";
   schema:description """Nico Rhodes is a genre jumping, multilingual performer, composer,  music director who is equally comfortable playing jazz, classical, funk or roots music, orchestrating for symphony, musical theatre and choirs. He has written 400 original compositions, four original musicals and arranged two symphonic pops concerts. He’s been nominated for two Jessie and five Ovation Awards and in 2019 was honoured with Nanaimo’s Emerging Cultural Leader Award. 
 He created and performs in the popular show Piano Heist.""";
-  schema:address _:f08261ee02e14d278e5829abb38e6e656;
-  iwts:birthProvince "BC";
-  iwts:birthCountry "CA";
-  schema:url "http://www.nicorhodesmusic.com", "https://www.facebook.com/nicorhodesmusician",
-    "https://www.instagram.com/nico_rhodes_music/?hl=en", "";
-  schema:additionalType "Music"^^skos:Concept;
+  schema:url "http://www.nicorhodesmusic.com";
+  schema:additionalType "http://kg.artsdata.ca/resource/MusicPerformance"^^skos:Concept;
   schema:genre "Musical Theatre";
   iwts:pronouns "He/ Him";
-  iwts:consent "agree_v_1.0" .
+  iwts:consent "agree_v_1.0";
+  schema:workLocation _:89a91839f4204c0689e9ab1ac79a4aec21;
+  schema:birthPlace _:89a91839f4204c0689e9ab1ac79a4aec23;
+  schema:sameAs "https://www.facebook.com/nicorhodesmusician", "https://www.instagram.com/nico_rhodes_music/?hl=en",
+    "" .
 
-_:f08261ee02e14d278e5829abb38e6e656 schema:addressRegion "BC";
-  schema:addressCountry "CA" .
+_:89a91839f4204c0689e9ab1ac79a4aec21 schema:address _:89a91839f4204c0689e9ab1ac79a4aec22 .
 
-iwts_person:7796 a schema:Person;
+_:89a91839f4204c0689e9ab1ac79a4aec22 schema:addressCountry "CA";
+  schema:addressRegion "BC" .
+
+_:89a91839f4204c0689e9ab1ac79a4aec23 schema:address _:89a91839f4204c0689e9ab1ac79a4aec24 .
+
+_:89a91839f4204c0689e9ab1ac79a4aec24 schema:addressCountry "CA";
+  schema:addressRegion "BC" .
+
+iwts_performer:7796 a schema:Person;
   schema:name "Buwa";
   schema:description "B.C.  based, Nigerian performer Buwa is a contemporary soul artist, with pop and R&B sensibilities and a penchant for storytelling.  Buwa draws influences from Whitney Houston, Jill Scott, India Arie, Billy Porter, and Brenda Fassie. Recognized for his infectious melodies, his versatile voice and captivating song writing, Buwa has released two EPs: Olu [2019] and Road Signs [2016], along with handful of captivating singles. He uses his music and talents to change the way the world sees Africa.";
-  schema:address _:f08261ee02e14d278e5829abb38e6e657;
-  iwts:birthProvince "";
-  iwts:birthCountry "NG";
-  schema:url "http://www.buwa.ca", "";
-  schema:additionalType "Music"^^skos:Concept;
+  schema:url "http://www.buwa.ca";
+  schema:additionalType "http://kg.artsdata.ca/resource/MusicPerformance"^^skos:Concept;
   schema:genre "Global";
   iwts:pronouns "He/ Him";
-  iwts:consent "agree_v_1.0" .
+  iwts:consent "agree_v_1.0";
+  schema:workLocation _:89a91839f4204c0689e9ab1ac79a4aec25;
+  schema:birthPlace _:89a91839f4204c0689e9ab1ac79a4aec27;
+  schema:sameAs "" .
 
-_:f08261ee02e14d278e5829abb38e6e657 schema:addressRegion "";
-  schema:addressCountry "CA" .
+_:89a91839f4204c0689e9ab1ac79a4aec25 schema:address _:89a91839f4204c0689e9ab1ac79a4aec26 .
 
-iwts_person:9086 a schema:Person;
+_:89a91839f4204c0689e9ab1ac79a4aec26 schema:addressCountry "CA";
+  schema:addressRegion "BC" .
+
+_:89a91839f4204c0689e9ab1ac79a4aec27 schema:address _:89a91839f4204c0689e9ab1ac79a4aec28 .
+
+_:89a91839f4204c0689e9ab1ac79a4aec28 schema:addressCountry "NG";
+  schema:addressRegion "" .
+
+iwts_performer:9086 a schema:Person;
   schema:name "Michelle Calder";
   schema:description "Michelle Calder is a longtime indie folk-pop singer-songwriter/performer, and emerging recording artist from Lower Sackville, Nova Scotia. Her Jewel-esque vocals combine with her nature/adventure-themed lyrics and plucky acoustic riffs aim to entice even the indoorsiest of folks to seek out the wildling within. Her debut EP, Wanderlust, (Spring 2024), has had 3 songs spend a total of 25 wks on the East Coast Top 30 Countdown this past year, with “Summer Love” spending 2 wks at number one in August 2024; first full-length album coming early 2025";
-  schema:address _:f08261ee02e14d278e5829abb38e6e658;
-  iwts:birthProvince "NS";
-  iwts:birthCountry "CA";
-  schema:url "http://www.michellecalder.com", "http://www.instagram.com/thesinginggoldsmith",
-    "http://www.facebook.com/michellecaldersmusic", "http://www.youtube.com/michellecaldersmusic",
-    "https://music.apple.com/ca/artist/michelle-calder/1629303138";
-  schema:additionalType "Music"^^skos:Concept;
+  schema:url "http://www.michellecalder.com";
+  schema:additionalType "http://kg.artsdata.ca/resource/MusicPerformance"^^skos:Concept;
   schema:genre "Folk/Bluegrass/Americana";
   iwts:pronouns "She/her";
-  iwts:consent "agree_v_1.0" .
+  iwts:consent "agree_v_1.0";
+  schema:workLocation _:89a91839f4204c0689e9ab1ac79a4aec29;
+  schema:birthPlace _:89a91839f4204c0689e9ab1ac79a4aec31;
+  schema:sameAs "http://www.instagram.com/thesinginggoldsmith", "http://www.facebook.com/michellecaldersmusic",
+    "http://www.youtube.com/michellecaldersmusic", "https://music.apple.com/ca/artist/michelle-calder/1629303138" .
 
-_:f08261ee02e14d278e5829abb38e6e658 schema:addressRegion "NS";
-  schema:addressCountry "CA" .
+_:89a91839f4204c0689e9ab1ac79a4aec29 schema:address _:89a91839f4204c0689e9ab1ac79a4aec30 .
 
-iwts_person:9088 a schema:Person;
+_:89a91839f4204c0689e9ab1ac79a4aec30 schema:addressCountry "CA";
+  schema:addressRegion "NS" .
+
+_:89a91839f4204c0689e9ab1ac79a4aec31 schema:address _:89a91839f4204c0689e9ab1ac79a4aec32 .
+
+_:89a91839f4204c0689e9ab1ac79a4aec32 schema:addressCountry "CA";
+  schema:addressRegion "NS" .
+
+iwts_performer:9088 a schema:Person;
   schema:name "Mungo";
   schema:description """Mungo is a true chameleon whose creativity knows no bounds. With a passion for dance, a talent for art, and a knack for making music, he is an artist who defies categorization. 
 Growing up listening to the likes of Oliver Mtukudzi, Nina Simone, Bob Marley and Hugh Masekela, Mungo taps into a unique sound and in the words of a fan, a “Heart-Chakra-opening” expansice vibe that is universally enjoyed by audiences. Mungo’s music embraces R&B, afrobeat, and a soulful vulnerability, turning upside down his own truths to uncover feelings we all share""";
-  schema:address _:f08261ee02e14d278e5829abb38e6e659;
-  iwts:birthProvince "";
-  iwts:birthCountry "MW";
-  schema:url "https://www.mungowona.com", "https://open.spotify.com/artist/5ZqtFjp0V1QSqItajhSrz1?si=zibRipUGQ1yVZqJUvOiN7w",
-    "https://music.apple.com/us/artist/mungo/206677415", "https://www.instagram.com/mungowona",
-    "https://www.youtube.com/@Mungowona/videos";
-  schema:additionalType "Music"^^skos:Concept;
+  schema:url "https://www.mungowona.com";
+  schema:additionalType "http://kg.artsdata.ca/resource/MusicPerformance"^^skos:Concept;
   schema:genre "Jazz/Blues";
   iwts:pronouns "he/they";
-  iwts:consent "agree_v_1.0" .
+  iwts:consent "agree_v_1.0";
+  schema:workLocation _:89a91839f4204c0689e9ab1ac79a4aec33;
+  schema:birthPlace _:89a91839f4204c0689e9ab1ac79a4aec35;
+  schema:sameAs "https://open.spotify.com/artist/5ZqtFjp0V1QSqItajhSrz1?si=zibRipUGQ1yVZqJUvOiN7w",
+    "https://music.apple.com/us/artist/mungo/206677415", "https://www.instagram.com/mungowona",
+    "https://www.youtube.com/@Mungowona/videos" .
 
-_:f08261ee02e14d278e5829abb38e6e659 schema:addressRegion "";
-  schema:addressCountry "US" .
+_:89a91839f4204c0689e9ab1ac79a4aec33 schema:address _:89a91839f4204c0689e9ab1ac79a4aec34 .
 
-iwts_person:9089 a schema:Person;
+_:89a91839f4204c0689e9ab1ac79a4aec34 schema:addressCountry "US";
+  schema:addressRegion "ID" .
+
+_:89a91839f4204c0689e9ab1ac79a4aec35 schema:address _:89a91839f4204c0689e9ab1ac79a4aec36 .
+
+_:89a91839f4204c0689e9ab1ac79a4aec36 schema:addressCountry "MW";
+  schema:addressRegion "" .
+
+iwts_performer:9089 a schema:PerformingGroup;
   schema:name "This Is The 60's";
   schema:description "Starting in 2012, This Is The 60's toured nationally represented by Creative Booking Agency (Christine Barkley). The producer closed the show in 2015 and three of the performers bought the rights to continue through today. The show consists of 5 musicians and 2 dancers that guide the audience through the greatest, most innovative decade in history. The nostalgia for the audience is at times overwhelming, in a good way. We are met with tears, laughter, hugs and euphoria. They never want the show to end.";
-  schema:address _:f08261ee02e14d278e5829abb38e6e6510;
-  iwts:birthProvince "";
-  iwts:birthCountry "";
-  schema:url "https://www.thisisthe60slive.com", "";
-  schema:additionalType "Music"^^skos:Concept;
+  schema:url "https://www.thisisthe60slive.com";
+  schema:additionalType "http://kg.artsdata.ca/resource/MusicPerformance"^^skos:Concept;
   schema:genre "Musical Theatre";
   iwts:pronouns "";
-  iwts:consent "agree_v_1.0" .
+  iwts:consent "agree_v_1.0";
+  schema:workLocation _:89a91839f4204c0689e9ab1ac79a4aec37;
+  schema:birthPlace _:89a91839f4204c0689e9ab1ac79a4aec39;
+  schema:sameAs "" .
 
-_:f08261ee02e14d278e5829abb38e6e6510 schema:addressRegion "";
-  schema:addressCountry "US" .
+_:89a91839f4204c0689e9ab1ac79a4aec37 schema:address _:89a91839f4204c0689e9ab1ac79a4aec38 .
 
-iwts_person:9090 a schema:Person;
+_:89a91839f4204c0689e9ab1ac79a4aec38 schema:addressCountry "US";
+  schema:addressRegion "NC" .
+
+_:89a91839f4204c0689e9ab1ac79a4aec39 schema:address _:89a91839f4204c0689e9ab1ac79a4aec40 .
+
+_:89a91839f4204c0689e9ab1ac79a4aec40 schema:addressCountry "";
+  schema:addressRegion "" .
+
+iwts_performer:9090 a schema:Person;
   schema:name "Shinobi_";
   schema:description "Originating from Surrey BC, Canada. Shinobi is an underground artist aiming to bring his darkest demons and the lightest angels into his music. With subject matter ranging from struggles faced in life to intrusive thoughts that cannot be dispersed from the mind, Shinobi brings raw emotion and story telling to the listner. The style of music ranging from dark boom bap hip hop to light catchy melodies Shinobi aim is to capture the hearts of the listeners and make them connect with his pain and thoughts";
-  schema:address _:f08261ee02e14d278e5829abb38e6e6511;
-  iwts:birthProvince "BC";
-  iwts:birthCountry "CA";
-  schema:url "https://open.spotify.com/artist/7wZauRB9B3iztDarvP0t5Z?si=20x92xOyR-StJvmGgT9CoA",
-    "https://on.soundcloud.com/9XHta", "https://www.instagram.com/shinobi_ent/profilecard/?igsh=enV6MHlqZzhkZ25m",
-    "";
-  schema:additionalType "Music"^^skos:Concept;
+  schema:url "https://open.spotify.com/artist/7wZauRB9B3iztDarvP0t5Z?si=20x92xOyR-StJvmGgT9CoA";
+  schema:additionalType "http://kg.artsdata.ca/resource/MusicPerformance"^^skos:Concept;
   schema:genre "Hip Hop/Rap";
   iwts:pronouns "";
-  iwts:consent "agree_v_1.0" .
+  iwts:consent "agree_v_1.0";
+  schema:workLocation _:89a91839f4204c0689e9ab1ac79a4aec41;
+  schema:birthPlace _:89a91839f4204c0689e9ab1ac79a4aec43;
+  schema:sameAs "https://on.soundcloud.com/9XHta", "https://www.instagram.com/shinobi_ent/profilecard/?igsh=enV6MHlqZzhkZ25m",
+    "" .
 
-_:f08261ee02e14d278e5829abb38e6e6511 schema:addressRegion "BC";
-  schema:addressCountry "CA" .
+_:89a91839f4204c0689e9ab1ac79a4aec41 schema:address _:89a91839f4204c0689e9ab1ac79a4aec42 .
 
-iwts_person:9091 a schema:Person;
+_:89a91839f4204c0689e9ab1ac79a4aec42 schema:addressCountry "CA";
+  schema:addressRegion "BC" .
+
+_:89a91839f4204c0689e9ab1ac79a4aec43 schema:address _:89a91839f4204c0689e9ab1ac79a4aec44 .
+
+_:89a91839f4204c0689e9ab1ac79a4aec44 schema:addressCountry "CA";
+  schema:addressRegion "BC" .
+
+iwts_performer:9091 a schema:PerformingGroup;
   schema:name "Chris Goodwin Band";
   schema:description "Captivating audiences in Western Canada since 2019. The CGB has ?performed at events such as the 2022 Best Damn Music Fest ?(opening for Dean Brody and Corb Lund), and the 2024 Crossroads Streetfest (openeing for ?CCMA award winning duo, Nice Horse). Their debut single, Shot of Jack Daniels, (2022) received widespread acclaim, reaching as high as #2 on ?independent country charts in Canada and the UK. Follow-up songs Don't You Wanna Truck? and Perfect Stranger found similar success ?and earned a spot on SiriusXM Top of the Country channel 171.";
-  schema:address _:f08261ee02e14d278e5829abb38e6e6512;
-  iwts:birthProvince "";
-  iwts:birthCountry "";
-  schema:url "https://www.chrisgoodwinband.com", "https://www.instagram.com/chrisgoodwinband",
-    "https://www.facebook.com/chrisgoodwinband", "https://www.tiktok.com/@chrisgoodwinband",
-    "";
-  schema:additionalType "Music"^^skos:Concept;
+  schema:url "https://www.chrisgoodwinband.com";
+  schema:additionalType "http://kg.artsdata.ca/resource/MusicPerformance"^^skos:Concept;
   schema:genre "Country";
   iwts:pronouns "";
-  iwts:consent "agree_v_1.0" .
+  iwts:consent "agree_v_1.0";
+  schema:workLocation _:89a91839f4204c0689e9ab1ac79a4aec45;
+  schema:birthPlace _:89a91839f4204c0689e9ab1ac79a4aec47;
+  schema:sameAs "https://www.instagram.com/chrisgoodwinband", "https://www.facebook.com/chrisgoodwinband",
+    "https://www.tiktok.com/@chrisgoodwinband", "" .
 
-_:f08261ee02e14d278e5829abb38e6e6512 schema:addressRegion "";
-  schema:addressCountry "CA" .
+_:89a91839f4204c0689e9ab1ac79a4aec45 schema:address _:89a91839f4204c0689e9ab1ac79a4aec46 .
 
-iwts_person:9092 a schema:Person;
+_:89a91839f4204c0689e9ab1ac79a4aec46 schema:addressCountry "CA";
+  schema:addressRegion "BC" .
+
+_:89a91839f4204c0689e9ab1ac79a4aec47 schema:address _:89a91839f4204c0689e9ab1ac79a4aec48 .
+
+_:89a91839f4204c0689e9ab1ac79a4aec48 schema:addressCountry "";
+  schema:addressRegion "" .
+
+iwts_performer:9092 a schema:Person;
   schema:name "Josh Weidner";
   schema:description """I started magic when I was about 5 years old, I saw my first magic show in Branson. I learned my first trick there and learned from library books as soon as I could read. 
 
 Magic has been a lifelong pursuit of mine, even while working as an accountant and earning my MBA. In 2010, I started working professionally as a corporate event magician and I have loved every part of the journey since. 
 
 I am one of the founding members of the Disbelief magic show in St Louis and I perform monthly with them at our event “Cocktails & Conjuring.\"""";
-  schema:address _:f08261ee02e14d278e5829abb38e6e6513;
-  iwts:birthProvince "IL";
-  iwts:birthCountry "US";
-  schema:url "https://www.joshweidner.com", "https://www.instagram.com/joshweidnermagic",
-    "";
-  schema:additionalType "Variety"^^skos:Concept;
+  schema:url "https://www.joshweidner.com";
+  schema:additionalType "http://kg.artsdata.ca/resource/VarietyShow"^^skos:Concept;
   schema:genre "Magic/Illusion";
   iwts:pronouns "";
-  iwts:consent "agree_v_1.0" .
+  iwts:consent "agree_v_1.0";
+  schema:workLocation _:89a91839f4204c0689e9ab1ac79a4aec49;
+  schema:birthPlace _:89a91839f4204c0689e9ab1ac79a4aec51;
+  schema:sameAs "https://www.instagram.com/joshweidnermagic", "" .
 
-_:f08261ee02e14d278e5829abb38e6e6513 schema:addressRegion "IL";
-  schema:addressCountry "US" .
+_:89a91839f4204c0689e9ab1ac79a4aec49 schema:address _:89a91839f4204c0689e9ab1ac79a4aec50 .
+
+_:89a91839f4204c0689e9ab1ac79a4aec50 schema:addressCountry "US";
+  schema:addressRegion "IL" .
+
+_:89a91839f4204c0689e9ab1ac79a4aec51 schema:address _:89a91839f4204c0689e9ab1ac79a4aec52 .
+
+_:89a91839f4204c0689e9ab1ac79a4aec52 schema:addressCountry "US";
+  schema:addressRegion "IL" .
