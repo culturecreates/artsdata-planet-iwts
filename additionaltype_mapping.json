@@ -1,0 +1,8 @@
+{
+    "Music": "http://kg.artsdata.ca/resource/MusicPerformance",
+    "Dance": "http://kg.artsdata.ca/resource/DancePerformance",
+    "Theatre": "http://kg.artsdata.ca/resource/TheatrePerformance",
+    "Variety": "http://kg.artsdata.ca/resource/VarietyShow",
+    "Family/Young Audience": "http://kg.artsdata.ca/resource/ChildrensEvent",
+    "Multidisciplinary": "http://kg.artsdata.ca/resource/PerformingArtsEvent"
+}

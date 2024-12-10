@@ -13,18 +13,26 @@ jobs:
         - 7333:7333
     steps:
       - name: Install requirements
-        run: apk update && apk add curl && apk add util-linux && apk add jq
+        run: apk update && apk add curl && apk add util-linux && apk add jq && apk add --no-cache python3 py3-pip
 
       - name: Run ontorefine server
         run: /opt/ontorefine/dist/bin/ontorefine &
 
       - name: Download project-configuration-file
         run: | 
-          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-iwts/main/ontorefine-config.json' >> config.json
+          curl 'https://raw.githubusercontent.com/${{github.repository}}/${{github.ref}}/ontorefine-config.json' >> config.json
 
       - name: Fetch entities
         run: |
             curl https://iwanttoshowcase.ca/apiiwts.php?api_key=${{secrets.APIIWTS_KEY}} -o iwts_data.json
+
+      - name: Fetch additional type mapping and python script
+        run: |
+            curl https://raw.githubusercontent.com/${{github.repository}}/${{github.ref}}/additionaltype_mapping.json -o mapping.json
+            curl https://raw.githubusercontent.com/${{github.repository}}/${{github.ref}}/update_additionaltype.py -o script.py
+
+      - name: Update additional types
+        run: python3 script.py iwts_data.json mapping.json
 
       - name: Transform into RDF
         run: |

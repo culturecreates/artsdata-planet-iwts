@@ -27,7 +27,7 @@
           "iwts": "https://iwanttoshowcase.ca/vocabulary#",
           "schema": "http://schema.org/",
           "skos": "http://www.w3.org/2004/02/skos/core#",
-          "iwts_person": "https://iwanttoshowcase.ca/person/"
+          "iwts_performer": "https://iwanttoshowcase.ca/performerid/"
         },
         "subjectMappings": [
           {
@@ -38,14 +38,14 @@
               },
               "transformation": {
                 "language": "prefix",
-                "expression": "iwts_person"
+                "expression": "iwts_performer"
               }
             },
             "typeMappings": [
               {
                 "valueSource": {
-                  "source": "constant",
-                  "constant": "Person"
+                  "source": "column",
+                  "columnName": "_ - performer_type"
                 },
                 "transformation": {
                   "language": "prefix",
@@ -104,123 +104,6 @@
                 "property": {
                   "valueSource": {
                     "source": "constant",
-                    "constant": "address"
-                  },
-                  "transformation": {
-                    "language": "prefix",
-                    "expression": "schema"
-                  }
-                },
-                "values": [
-                  {
-                    "valueSource": {
-                      "source": "column",
-                      "columnName": "_ - performerid"
-                    },
-                    "valueType": {
-                      "type": "unique_bnode",
-                      "propertyMappings": [
-                        {
-                          "property": {
-                            "valueSource": {
-                              "source": "constant",
-                              "constant": "addressRegion"
-                            },
-                            "transformation": {
-                              "language": "prefix",
-                              "expression": "schema"
-                            }
-                          },
-                          "values": [
-                            {
-                              "valueSource": {
-                                "source": "column",
-                                "columnName": "_ - performer_birth_province"
-                              },
-                              "valueType": {
-                                "type": "literal"
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "property": {
-                            "valueSource": {
-                              "source": "constant",
-                              "constant": "addressCountry"
-                            },
-                            "transformation": {
-                              "language": "prefix",
-                              "expression": "schema"
-                            }
-                          },
-                          "values": [
-                            {
-                              "valueSource": {
-                                "source": "column",
-                                "columnName": "_ - performer_country"
-                              },
-                              "valueType": {
-                                "type": "literal"
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  }
-                ]
-              },
-              {
-                "property": {
-                  "valueSource": {
-                    "source": "constant",
-                    "constant": "birthProvince"
-                  },
-                  "transformation": {
-                    "language": "prefix",
-                    "expression": "iwts"
-                  }
-                },
-                "values": [
-                  {
-                    "valueSource": {
-                      "source": "column",
-                      "columnName": "_ - performer_birth_province"
-                    },
-                    "valueType": {
-                      "type": "literal"
-                    }
-                  }
-                ]
-              },
-              {
-                "property": {
-                  "valueSource": {
-                    "source": "constant",
-                    "constant": "birthCountry"
-                  },
-                  "transformation": {
-                    "language": "prefix",
-                    "expression": "iwts"
-                  }
-                },
-                "values": [
-                  {
-                    "valueSource": {
-                      "source": "column",
-                      "columnName": "_ - performer_birth_country"
-                    },
-                    "valueType": {
-                      "type": "literal"
-                    }
-                  }
-                ]
-              },
-              {
-                "property": {
-                  "valueSource": {
-                    "source": "constant",
                     "constant": "url"
                   },
                   "transformation": {
@@ -233,42 +116,6 @@
                     "valueSource": {
                       "source": "column",
                       "columnName": "_ - performer_website1"
-                    },
-                    "valueType": {
-                      "type": "literal"
-                    }
-                  },
-                  {
-                    "valueSource": {
-                      "source": "column",
-                      "columnName": "_ - performer_website2"
-                    },
-                    "valueType": {
-                      "type": "literal"
-                    }
-                  },
-                  {
-                    "valueSource": {
-                      "source": "column",
-                      "columnName": "_ - performer_website3"
-                    },
-                    "valueType": {
-                      "type": "literal"
-                    }
-                  },
-                  {
-                    "valueSource": {
-                      "source": "column",
-                      "columnName": "_ - performer_website4"
-                    },
-                    "valueType": {
-                      "type": "literal"
-                    }
-                  },
-                  {
-                    "valueSource": {
-                      "source": "column",
-                      "columnName": "_ - performer_website5"
                     },
                     "valueType": {
                       "type": "literal"
@@ -371,6 +218,248 @@
                     "valueSource": {
                       "source": "column",
                       "columnName": "_ - performer_consent"
+                    },
+                    "valueType": {
+                      "type": "literal"
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "workLocation"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "schema"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "_ - performerid"
+                    },
+                    "valueType": {
+                      "type": "unique_bnode",
+                      "propertyMappings": [
+                        {
+                          "property": {
+                            "valueSource": {
+                              "source": "constant",
+                              "constant": "address"
+                            },
+                            "transformation": {
+                              "language": "prefix",
+                              "expression": "schema"
+                            }
+                          },
+                          "values": [
+                            {
+                              "valueSource": {
+                                "source": "column",
+                                "columnName": "_ - performerid"
+                              },
+                              "valueType": {
+                                "type": "unique_bnode",
+                                "propertyMappings": [
+                                  {
+                                    "property": {
+                                      "valueSource": {
+                                        "source": "constant",
+                                        "constant": "addressCountry"
+                                      },
+                                      "transformation": {
+                                        "language": "prefix",
+                                        "expression": "schema"
+                                      }
+                                    },
+                                    "values": [
+                                      {
+                                        "valueSource": {
+                                          "source": "column",
+                                          "columnName": "_ - performer_country"
+                                        },
+                                        "valueType": {
+                                          "type": "literal"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "property": {
+                                      "valueSource": {
+                                        "source": "constant",
+                                        "constant": "addressRegion"
+                                      },
+                                      "transformation": {
+                                        "language": "prefix",
+                                        "expression": "schema"
+                                      }
+                                    },
+                                    "values": [
+                                      {
+                                        "valueSource": {
+                                          "source": "column",
+                                          "columnName": "_ - performer_province"
+                                        },
+                                        "valueType": {
+                                          "type": "literal"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "birthPlace"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "schema"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "_ - performerid"
+                    },
+                    "valueType": {
+                      "type": "unique_bnode",
+                      "propertyMappings": [
+                        {
+                          "property": {
+                            "valueSource": {
+                              "source": "constant",
+                              "constant": "address"
+                            },
+                            "transformation": {
+                              "language": "prefix",
+                              "expression": "schema"
+                            }
+                          },
+                          "values": [
+                            {
+                              "valueSource": {
+                                "source": "column",
+                                "columnName": "_ - performerid"
+                              },
+                              "valueType": {
+                                "type": "unique_bnode",
+                                "propertyMappings": [
+                                  {
+                                    "property": {
+                                      "valueSource": {
+                                        "source": "constant",
+                                        "constant": "addressCountry"
+                                      },
+                                      "transformation": {
+                                        "language": "prefix",
+                                        "expression": "schema"
+                                      }
+                                    },
+                                    "values": [
+                                      {
+                                        "valueSource": {
+                                          "source": "column",
+                                          "columnName": "_ - performer_birth_country"
+                                        },
+                                        "valueType": {
+                                          "type": "literal"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "property": {
+                                      "valueSource": {
+                                        "source": "constant",
+                                        "constant": "addressRegion"
+                                      },
+                                      "transformation": {
+                                        "language": "prefix",
+                                        "expression": "schema"
+                                      }
+                                    },
+                                    "values": [
+                                      {
+                                        "valueSource": {
+                                          "source": "column",
+                                          "columnName": "_ - performer_birth_province"
+                                        },
+                                        "valueType": {
+                                          "type": "literal"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "sameAs"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "schema"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "_ - performer_website2"
+                    },
+                    "valueType": {
+                      "type": "literal"
+                    }
+                  },
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "_ - performer_website3"
+                    },
+                    "valueType": {
+                      "type": "literal"
+                    }
+                  },
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "_ - performer_website4"
+                    },
+                    "valueType": {
+                      "type": "literal"
+                    }
+                  },
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "_ - performer_website5"
                     },
                     "valueType": {
                       "type": "literal"
