@@ -117,8 +117,13 @@
                       "source": "column",
                       "columnName": "_ - performer_website1"
                     },
+                    "transformation": {
+                      "language": "raw"
+                    },
                     "valueType": {
-                      "type": "literal"
+                      "type": "iri",
+                      "typeMappings": [],
+                      "propertyMappings": []
                     }
                   }
                 ]
@@ -127,7 +132,7 @@
                 "property": {
                   "valueSource": {
                     "source": "constant",
-                    "constant": "additionalType"
+                    "constant": "knowsAbout"
                   },
                   "transformation": {
                     "language": "prefix",
@@ -140,18 +145,13 @@
                       "source": "column",
                       "columnName": "_ - performance_category"
                     },
+                    "transformation": {
+                      "language": "raw"
+                    },
                     "valueType": {
-                      "type": "datatype_literal",
-                      "datatype": {
-                        "valueSource": {
-                          "source": "constant",
-                          "constant": "Concept"
-                        },
-                        "transformation": {
-                          "language": "prefix",
-                          "expression": "skos"
-                        }
-                      }
+                      "type": "iri",
+                      "typeMappings": [],
+                      "propertyMappings": []
                     }
                   }
                 ]
@@ -240,7 +240,7 @@
                   {
                     "valueSource": {
                       "source": "column",
-                      "columnName": "_ - performerid"
+                      "columnName": "_ - performer_country"
                     },
                     "valueType": {
                       "type": "unique_bnode",
@@ -260,7 +260,7 @@
                             {
                               "valueSource": {
                                 "source": "column",
-                                "columnName": "_ - performerid"
+                                "columnName": "_ - performer_country"
                               },
                               "valueType": {
                                 "type": "unique_bnode",
@@ -336,7 +336,7 @@
                   {
                     "valueSource": {
                       "source": "column",
-                      "columnName": "_ - performerid"
+                      "columnName": "_ - performer_birth_country"
                     },
                     "valueType": {
                       "type": "unique_bnode",
@@ -356,7 +356,7 @@
                             {
                               "valueSource": {
                                 "source": "column",
-                                "columnName": "_ - performerid"
+                                "columnName": "_ - performer_birth_country"
                               },
                               "valueType": {
                                 "type": "unique_bnode",
@@ -434,8 +434,13 @@
                       "source": "column",
                       "columnName": "_ - performer_website2"
                     },
+                    "transformation": {
+                      "language": "raw"
+                    },
                     "valueType": {
-                      "type": "literal"
+                      "type": "iri",
+                      "typeMappings": [],
+                      "propertyMappings": []
                     }
                   },
                   {
@@ -443,8 +448,13 @@
                       "source": "column",
                       "columnName": "_ - performer_website3"
                     },
+                    "transformation": {
+                      "language": "raw"
+                    },
                     "valueType": {
-                      "type": "literal"
+                      "type": "iri",
+                      "typeMappings": [],
+                      "propertyMappings": []
                     }
                   },
                   {
@@ -452,8 +462,13 @@
                       "source": "column",
                       "columnName": "_ - performer_website4"
                     },
+                    "transformation": {
+                      "language": "raw"
+                    },
                     "valueType": {
-                      "type": "literal"
+                      "type": "iri",
+                      "typeMappings": [],
+                      "propertyMappings": []
                     }
                   },
                   {
@@ -461,8 +476,13 @@
                       "source": "column",
                       "columnName": "_ - performer_website5"
                     },
+                    "transformation": {
+                      "language": "raw"
+                    },
                     "valueType": {
-                      "type": "literal"
+                      "type": "iri",
+                      "typeMappings": [],
+                      "propertyMappings": []
                     }
                   }
                 ]
