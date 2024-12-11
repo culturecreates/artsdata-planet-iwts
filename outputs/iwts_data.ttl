@@ -11,21 +11,20 @@ Following in the footprints of many blue collar poets before him, JJ has toured 
   schema:url <http://www.jjvoss.com>;
   schema:knowsAbout <http://kg.artsdata.ca/resource/MusicPerformance>;
   schema:genre "Country";
-  iwts:pronouns "";
   iwts:consent "agree_v_1.0";
-  schema:workLocation _:ae1b5629be5045b48554697de3e0dba11;
-  schema:birthPlace _:ae1b5629be5045b48554697de3e0dba13;
+  schema:workLocation _:1c499ba04ed34964bd2f780af4ed13971;
+  schema:birthPlace _:1c499ba04ed34964bd2f780af4ed13973;
   schema:sameAs <https://www.jjvoss.com/epk>, <https://www.youtube.com/playlist?list=PLlk85H6298cxjcC56F8MOAQoNrrjtO1gu>,
-    <https://www.facebook.com/JJVoss/>, <> .
+    <https://www.facebook.com/JJVoss/> .
 
-_:ae1b5629be5045b48554697de3e0dba11 schema:address _:ae1b5629be5045b48554697de3e0dba12 .
+_:1c499ba04ed34964bd2f780af4ed13971 schema:address _:1c499ba04ed34964bd2f780af4ed13972 .
 
-_:ae1b5629be5045b48554697de3e0dba12 schema:addressCountry "CA";
+_:1c499ba04ed34964bd2f780af4ed13972 schema:addressCountry "CA";
   schema:addressRegion "SK" .
 
-_:ae1b5629be5045b48554697de3e0dba13 schema:address _:ae1b5629be5045b48554697de3e0dba14 .
+_:1c499ba04ed34964bd2f780af4ed13973 schema:address _:1c499ba04ed34964bd2f780af4ed13974 .
 
-_:ae1b5629be5045b48554697de3e0dba14 schema:addressCountry "CA";
+_:1c499ba04ed34964bd2f780af4ed13974 schema:addressCountry "CA";
   schema:addressRegion "SK" .
 
 iwts_performer:4296 a schema:PerformingGroup;
@@ -35,22 +34,15 @@ Career highlights include winning a JUNO Award and a cameo in the movie Cool Run
   schema:url <http://www.leafrapids.org>;
   schema:knowsAbout <http://kg.artsdata.ca/resource/MusicPerformance>;
   schema:genre "Folk/Bluegrass/Americana";
-  iwts:pronouns "";
   iwts:consent "agree_v_1.0";
-  schema:workLocation _:ae1b5629be5045b48554697de3e0dba15;
-  schema:birthPlace _:ae1b5629be5045b48554697de3e0dba17;
+  schema:workLocation _:1c499ba04ed34964bd2f780af4ed13975;
   schema:sameAs <https://ffm.to/velvetpaintings>, <https://www.facebook.com/leafrapidsmusic>,
     <https://www.youtube.com/channel/UCFRvUD5lEh4mVZ1MNMrN8hg>, <https://www.instagram.com/leafrapidsmusic> .
 
-_:ae1b5629be5045b48554697de3e0dba15 schema:address _:ae1b5629be5045b48554697de3e0dba16 .
+_:1c499ba04ed34964bd2f780af4ed13975 schema:address _:1c499ba04ed34964bd2f780af4ed13976 .
 
-_:ae1b5629be5045b48554697de3e0dba16 schema:addressCountry "CA";
+_:1c499ba04ed34964bd2f780af4ed13976 schema:addressCountry "CA";
   schema:addressRegion "MB" .
-
-_:ae1b5629be5045b48554697de3e0dba17 schema:address _:ae1b5629be5045b48554697de3e0dba18 .
-
-_:ae1b5629be5045b48554697de3e0dba18 schema:addressCountry "";
-  schema:addressRegion "" .
 
 iwts_performer:4358 a schema:PerformingGroup;
   schema:name "DuffleBag Theatre";
@@ -58,21 +50,14 @@ iwts_performer:4358 a schema:PerformingGroup;
   schema:url <http://www.dufflebag.com>;
   schema:knowsAbout <http://kg.artsdata.ca/resource/TheatrePerformance>;
   schema:genre "Comedy";
-  iwts:pronouns "";
   iwts:consent "agree_v_1.0";
-  schema:workLocation _:ae1b5629be5045b48554697de3e0dba19;
-  schema:birthPlace _:ae1b5629be5045b48554697de3e0dba111;
-  schema:sameAs <https://www.kbamonline.com/#/dufflebag-theatre/>, <> .
+  schema:workLocation _:1c499ba04ed34964bd2f780af4ed13977;
+  schema:sameAs <https://www.kbamonline.com/#/dufflebag-theatre/> .
 
-_:ae1b5629be5045b48554697de3e0dba19 schema:address _:ae1b5629be5045b48554697de3e0dba110 .
+_:1c499ba04ed34964bd2f780af4ed13977 schema:address _:1c499ba04ed34964bd2f780af4ed13978 .
 
-_:ae1b5629be5045b48554697de3e0dba110 schema:addressCountry "CA";
+_:1c499ba04ed34964bd2f780af4ed13978 schema:addressCountry "CA";
   schema:addressRegion "ON" .
-
-_:ae1b5629be5045b48554697de3e0dba111 schema:address _:ae1b5629be5045b48554697de3e0dba112 .
-
-_:ae1b5629be5045b48554697de3e0dba112 schema:addressCountry "";
-  schema:addressRegion "" .
 
 iwts_performer:5180 a schema:Person;
   schema:name "Karla Kloeble";
@@ -82,18 +67,17 @@ iwts_performer:5180 a schema:Person;
   schema:genre "Circus";
   iwts:pronouns "she/her";
   iwts:consent "agree_v_1.0";
-  schema:workLocation _:ae1b5629be5045b48554697de3e0dba113;
-  schema:birthPlace _:ae1b5629be5045b48554697de3e0dba115;
-  schema:sameAs <> .
+  schema:workLocation _:1c499ba04ed34964bd2f780af4ed13979;
+  schema:birthPlace _:1c499ba04ed34964bd2f780af4ed139711 .
 
-_:ae1b5629be5045b48554697de3e0dba113 schema:address _:ae1b5629be5045b48554697de3e0dba114 .
+_:1c499ba04ed34964bd2f780af4ed13979 schema:address _:1c499ba04ed34964bd2f780af4ed139710 .
 
-_:ae1b5629be5045b48554697de3e0dba114 schema:addressCountry "CA";
+_:1c499ba04ed34964bd2f780af4ed139710 schema:addressCountry "CA";
   schema:addressRegion "SK" .
 
-_:ae1b5629be5045b48554697de3e0dba115 schema:address _:ae1b5629be5045b48554697de3e0dba116 .
+_:1c499ba04ed34964bd2f780af4ed139711 schema:address _:1c499ba04ed34964bd2f780af4ed139712 .
 
-_:ae1b5629be5045b48554697de3e0dba116 schema:addressCountry "CA";
+_:1c499ba04ed34964bd2f780af4ed139712 schema:addressCountry "CA";
   schema:addressRegion "SK" .
 
 iwts_performer:6821 a schema:PerformingGroup;
@@ -102,21 +86,13 @@ iwts_performer:6821 a schema:PerformingGroup;
   schema:url <http://www.mollyscomedycabaret.com>;
   schema:knowsAbout <http://kg.artsdata.ca/resource/VarietyShow>;
   schema:genre "Cabaret";
-  iwts:pronouns "";
   iwts:consent "agree_v_1.0";
-  schema:workLocation _:ae1b5629be5045b48554697de3e0dba117;
-  schema:birthPlace _:ae1b5629be5045b48554697de3e0dba119;
-  schema:sameAs <> .
+  schema:workLocation _:1c499ba04ed34964bd2f780af4ed139713 .
 
-_:ae1b5629be5045b48554697de3e0dba117 schema:address _:ae1b5629be5045b48554697de3e0dba118 .
+_:1c499ba04ed34964bd2f780af4ed139713 schema:address _:1c499ba04ed34964bd2f780af4ed139714 .
 
-_:ae1b5629be5045b48554697de3e0dba118 schema:addressCountry "CA";
+_:1c499ba04ed34964bd2f780af4ed139714 schema:addressCountry "CA";
   schema:addressRegion "BC" .
-
-_:ae1b5629be5045b48554697de3e0dba119 schema:address _:ae1b5629be5045b48554697de3e0dba120 .
-
-_:ae1b5629be5045b48554697de3e0dba120 schema:addressCountry "";
-  schema:addressRegion "" .
 
 iwts_performer:7182 a schema:Person;
   schema:name "Nico Rhodes";
@@ -127,19 +103,18 @@ He created and performs in the popular show Piano Heist.""";
   schema:genre "Musical Theatre";
   iwts:pronouns "He/ Him";
   iwts:consent "agree_v_1.0";
-  schema:workLocation _:ae1b5629be5045b48554697de3e0dba121;
-  schema:birthPlace _:ae1b5629be5045b48554697de3e0dba123;
-  schema:sameAs <https://www.facebook.com/nicorhodesmusician>, <https://www.instagram.com/nico_rhodes_music/?hl=en>,
-    <> .
+  schema:workLocation _:1c499ba04ed34964bd2f780af4ed139715;
+  schema:birthPlace _:1c499ba04ed34964bd2f780af4ed139717;
+  schema:sameAs <https://www.facebook.com/nicorhodesmusician>, <https://www.instagram.com/nico_rhodes_music/?hl=en> .
 
-_:ae1b5629be5045b48554697de3e0dba121 schema:address _:ae1b5629be5045b48554697de3e0dba122 .
+_:1c499ba04ed34964bd2f780af4ed139715 schema:address _:1c499ba04ed34964bd2f780af4ed139716 .
 
-_:ae1b5629be5045b48554697de3e0dba122 schema:addressCountry "CA";
+_:1c499ba04ed34964bd2f780af4ed139716 schema:addressCountry "CA";
   schema:addressRegion "BC" .
 
-_:ae1b5629be5045b48554697de3e0dba123 schema:address _:ae1b5629be5045b48554697de3e0dba124 .
+_:1c499ba04ed34964bd2f780af4ed139717 schema:address _:1c499ba04ed34964bd2f780af4ed139718 .
 
-_:ae1b5629be5045b48554697de3e0dba124 schema:addressCountry "CA";
+_:1c499ba04ed34964bd2f780af4ed139718 schema:addressCountry "CA";
   schema:addressRegion "BC" .
 
 iwts_performer:7796 a schema:Person;
@@ -150,19 +125,17 @@ iwts_performer:7796 a schema:Person;
   schema:genre "Global";
   iwts:pronouns "He/ Him";
   iwts:consent "agree_v_1.0";
-  schema:workLocation _:ae1b5629be5045b48554697de3e0dba125;
-  schema:birthPlace _:ae1b5629be5045b48554697de3e0dba127;
-  schema:sameAs <> .
+  schema:workLocation _:1c499ba04ed34964bd2f780af4ed139719;
+  schema:birthPlace _:1c499ba04ed34964bd2f780af4ed139721 .
 
-_:ae1b5629be5045b48554697de3e0dba125 schema:address _:ae1b5629be5045b48554697de3e0dba126 .
+_:1c499ba04ed34964bd2f780af4ed139719 schema:address _:1c499ba04ed34964bd2f780af4ed139720 .
 
-_:ae1b5629be5045b48554697de3e0dba126 schema:addressCountry "CA";
+_:1c499ba04ed34964bd2f780af4ed139720 schema:addressCountry "CA";
   schema:addressRegion "BC" .
 
-_:ae1b5629be5045b48554697de3e0dba127 schema:address _:ae1b5629be5045b48554697de3e0dba128 .
+_:1c499ba04ed34964bd2f780af4ed139721 schema:address _:1c499ba04ed34964bd2f780af4ed139722 .
 
-_:ae1b5629be5045b48554697de3e0dba128 schema:addressCountry "NG";
-  schema:addressRegion "" .
+_:1c499ba04ed34964bd2f780af4ed139722 schema:addressCountry "NG" .
 
 iwts_performer:9086 a schema:Person;
   schema:name "Michelle Calder";
@@ -172,19 +145,19 @@ iwts_performer:9086 a schema:Person;
   schema:genre "Folk/Bluegrass/Americana";
   iwts:pronouns "She/her";
   iwts:consent "agree_v_1.0";
-  schema:workLocation _:ae1b5629be5045b48554697de3e0dba129;
-  schema:birthPlace _:ae1b5629be5045b48554697de3e0dba131;
+  schema:workLocation _:1c499ba04ed34964bd2f780af4ed139723;
+  schema:birthPlace _:1c499ba04ed34964bd2f780af4ed139725;
   schema:sameAs <http://www.instagram.com/thesinginggoldsmith>, <http://www.facebook.com/michellecaldersmusic>,
     <http://www.youtube.com/michellecaldersmusic>, <https://music.apple.com/ca/artist/michelle-calder/1629303138> .
 
-_:ae1b5629be5045b48554697de3e0dba129 schema:address _:ae1b5629be5045b48554697de3e0dba130 .
+_:1c499ba04ed34964bd2f780af4ed139723 schema:address _:1c499ba04ed34964bd2f780af4ed139724 .
 
-_:ae1b5629be5045b48554697de3e0dba130 schema:addressCountry "CA";
+_:1c499ba04ed34964bd2f780af4ed139724 schema:addressCountry "CA";
   schema:addressRegion "NS" .
 
-_:ae1b5629be5045b48554697de3e0dba131 schema:address _:ae1b5629be5045b48554697de3e0dba132 .
+_:1c499ba04ed34964bd2f780af4ed139725 schema:address _:1c499ba04ed34964bd2f780af4ed139726 .
 
-_:ae1b5629be5045b48554697de3e0dba132 schema:addressCountry "CA";
+_:1c499ba04ed34964bd2f780af4ed139726 schema:addressCountry "CA";
   schema:addressRegion "NS" .
 
 iwts_performer:9088 a schema:Person;
@@ -196,21 +169,20 @@ Growing up listening to the likes of Oliver Mtukudzi, Nina Simone, Bob Marley an
   schema:genre "Jazz/Blues";
   iwts:pronouns "he/they";
   iwts:consent "agree_v_1.0";
-  schema:workLocation _:ae1b5629be5045b48554697de3e0dba133;
-  schema:birthPlace _:ae1b5629be5045b48554697de3e0dba135;
+  schema:workLocation _:1c499ba04ed34964bd2f780af4ed139727;
+  schema:birthPlace _:1c499ba04ed34964bd2f780af4ed139729;
   schema:sameAs <https://open.spotify.com/artist/5ZqtFjp0V1QSqItajhSrz1?si=zibRipUGQ1yVZqJUvOiN7w>,
     <https://music.apple.com/us/artist/mungo/206677415>, <https://www.instagram.com/mungowona>,
     <https://www.youtube.com/@Mungowona/videos> .
 
-_:ae1b5629be5045b48554697de3e0dba133 schema:address _:ae1b5629be5045b48554697de3e0dba134 .
+_:1c499ba04ed34964bd2f780af4ed139727 schema:address _:1c499ba04ed34964bd2f780af4ed139728 .
 
-_:ae1b5629be5045b48554697de3e0dba134 schema:addressCountry "US";
+_:1c499ba04ed34964bd2f780af4ed139728 schema:addressCountry "US";
   schema:addressRegion "ID" .
 
-_:ae1b5629be5045b48554697de3e0dba135 schema:address _:ae1b5629be5045b48554697de3e0dba136 .
+_:1c499ba04ed34964bd2f780af4ed139729 schema:address _:1c499ba04ed34964bd2f780af4ed139730 .
 
-_:ae1b5629be5045b48554697de3e0dba136 schema:addressCountry "MW";
-  schema:addressRegion "" .
+_:1c499ba04ed34964bd2f780af4ed139730 schema:addressCountry "MW" .
 
 iwts_performer:9089 a schema:PerformingGroup;
   schema:name "This Is The 60's";
@@ -218,21 +190,13 @@ iwts_performer:9089 a schema:PerformingGroup;
   schema:url <https://www.thisisthe60slive.com>;
   schema:knowsAbout <http://kg.artsdata.ca/resource/MusicPerformance>;
   schema:genre "Musical Theatre";
-  iwts:pronouns "";
   iwts:consent "agree_v_1.0";
-  schema:workLocation _:ae1b5629be5045b48554697de3e0dba137;
-  schema:birthPlace _:ae1b5629be5045b48554697de3e0dba139;
-  schema:sameAs <> .
+  schema:workLocation _:1c499ba04ed34964bd2f780af4ed139731 .
 
-_:ae1b5629be5045b48554697de3e0dba137 schema:address _:ae1b5629be5045b48554697de3e0dba138 .
+_:1c499ba04ed34964bd2f780af4ed139731 schema:address _:1c499ba04ed34964bd2f780af4ed139732 .
 
-_:ae1b5629be5045b48554697de3e0dba138 schema:addressCountry "US";
+_:1c499ba04ed34964bd2f780af4ed139732 schema:addressCountry "US";
   schema:addressRegion "NC" .
-
-_:ae1b5629be5045b48554697de3e0dba139 schema:address _:ae1b5629be5045b48554697de3e0dba140 .
-
-_:ae1b5629be5045b48554697de3e0dba140 schema:addressCountry "";
-  schema:addressRegion "" .
 
 iwts_performer:9090 a schema:Person;
   schema:name "Shinobi_";
@@ -240,21 +204,19 @@ iwts_performer:9090 a schema:Person;
   schema:url <https://open.spotify.com/artist/7wZauRB9B3iztDarvP0t5Z?si=20x92xOyR-StJvmGgT9CoA>;
   schema:knowsAbout <http://kg.artsdata.ca/resource/MusicPerformance>;
   schema:genre "Hip Hop/Rap";
-  iwts:pronouns "";
   iwts:consent "agree_v_1.0";
-  schema:workLocation _:ae1b5629be5045b48554697de3e0dba141;
-  schema:birthPlace _:ae1b5629be5045b48554697de3e0dba143;
-  schema:sameAs <https://on.soundcloud.com/9XHta>, <https://www.instagram.com/shinobi_ent/profilecard/?igsh=enV6MHlqZzhkZ25m>,
-    <> .
+  schema:workLocation _:1c499ba04ed34964bd2f780af4ed139733;
+  schema:birthPlace _:1c499ba04ed34964bd2f780af4ed139735;
+  schema:sameAs <https://on.soundcloud.com/9XHta>, <https://www.instagram.com/shinobi_ent/profilecard/?igsh=enV6MHlqZzhkZ25m> .
 
-_:ae1b5629be5045b48554697de3e0dba141 schema:address _:ae1b5629be5045b48554697de3e0dba142 .
+_:1c499ba04ed34964bd2f780af4ed139733 schema:address _:1c499ba04ed34964bd2f780af4ed139734 .
 
-_:ae1b5629be5045b48554697de3e0dba142 schema:addressCountry "CA";
+_:1c499ba04ed34964bd2f780af4ed139734 schema:addressCountry "CA";
   schema:addressRegion "BC" .
 
-_:ae1b5629be5045b48554697de3e0dba143 schema:address _:ae1b5629be5045b48554697de3e0dba144 .
+_:1c499ba04ed34964bd2f780af4ed139735 schema:address _:1c499ba04ed34964bd2f780af4ed139736 .
 
-_:ae1b5629be5045b48554697de3e0dba144 schema:addressCountry "CA";
+_:1c499ba04ed34964bd2f780af4ed139736 schema:addressCountry "CA";
   schema:addressRegion "BC" .
 
 iwts_performer:9091 a schema:PerformingGroup;
@@ -263,22 +225,15 @@ iwts_performer:9091 a schema:PerformingGroup;
   schema:url <https://www.chrisgoodwinband.com>;
   schema:knowsAbout <http://kg.artsdata.ca/resource/MusicPerformance>;
   schema:genre "Country";
-  iwts:pronouns "";
   iwts:consent "agree_v_1.0";
-  schema:workLocation _:ae1b5629be5045b48554697de3e0dba145;
-  schema:birthPlace _:ae1b5629be5045b48554697de3e0dba147;
+  schema:workLocation _:1c499ba04ed34964bd2f780af4ed139737;
   schema:sameAs <https://www.instagram.com/chrisgoodwinband>, <https://www.facebook.com/chrisgoodwinband>,
-    <https://www.tiktok.com/@chrisgoodwinband>, <> .
+    <https://www.tiktok.com/@chrisgoodwinband> .
 
-_:ae1b5629be5045b48554697de3e0dba145 schema:address _:ae1b5629be5045b48554697de3e0dba146 .
+_:1c499ba04ed34964bd2f780af4ed139737 schema:address _:1c499ba04ed34964bd2f780af4ed139738 .
 
-_:ae1b5629be5045b48554697de3e0dba146 schema:addressCountry "CA";
+_:1c499ba04ed34964bd2f780af4ed139738 schema:addressCountry "CA";
   schema:addressRegion "BC" .
-
-_:ae1b5629be5045b48554697de3e0dba147 schema:address _:ae1b5629be5045b48554697de3e0dba148 .
-
-_:ae1b5629be5045b48554697de3e0dba148 schema:addressCountry "";
-  schema:addressRegion "" .
 
 iwts_performer:9092 a schema:Person;
   schema:name "Josh Weidner";
@@ -290,18 +245,17 @@ I am one of the founding members of the Disbelief magic show in St Louis and I p
   schema:url <https://www.joshweidner.com>;
   schema:knowsAbout <http://kg.artsdata.ca/resource/VarietyShow>;
   schema:genre "Magic/Illusion";
-  iwts:pronouns "";
   iwts:consent "agree_v_1.0";
-  schema:workLocation _:ae1b5629be5045b48554697de3e0dba149;
-  schema:birthPlace _:ae1b5629be5045b48554697de3e0dba151;
-  schema:sameAs <https://www.instagram.com/joshweidnermagic>, <> .
+  schema:workLocation _:1c499ba04ed34964bd2f780af4ed139739;
+  schema:birthPlace _:1c499ba04ed34964bd2f780af4ed139741;
+  schema:sameAs <https://www.instagram.com/joshweidnermagic> .
 
-_:ae1b5629be5045b48554697de3e0dba149 schema:address _:ae1b5629be5045b48554697de3e0dba150 .
+_:1c499ba04ed34964bd2f780af4ed139739 schema:address _:1c499ba04ed34964bd2f780af4ed139740 .
 
-_:ae1b5629be5045b48554697de3e0dba150 schema:addressCountry "US";
+_:1c499ba04ed34964bd2f780af4ed139740 schema:addressCountry "US";
   schema:addressRegion "IL" .
 
-_:ae1b5629be5045b48554697de3e0dba151 schema:address _:ae1b5629be5045b48554697de3e0dba152 .
+_:1c499ba04ed34964bd2f780af4ed139741 schema:address _:1c499ba04ed34964bd2f780af4ed139742 .
 
-_:ae1b5629be5045b48554697de3e0dba152 schema:addressCountry "US";
+_:1c499ba04ed34964bd2f780af4ed139742 schema:addressCountry "US";
   schema:addressRegion "IL" .
