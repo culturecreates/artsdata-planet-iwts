@@ -2,6 +2,8 @@ name: Fetch IWTS entities
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '30 5 * * 3'
 
 jobs:
   process-using-ontorefine:
