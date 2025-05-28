@@ -80,7 +80,7 @@ jobs:
     needs: commit-and-push
     steps:
       - name: Action setup
-        uses: culturecreates/artsdata-pipeline-action@v2
+        uses: culturecreates/artsdata-pipeline-action@v3
         with:
           artifact: iwts-ca
           publisher: "${{ secrets.PUBLISHER_URI_GREGORY }}"
