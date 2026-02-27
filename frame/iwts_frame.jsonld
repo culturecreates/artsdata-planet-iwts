@@ -2,12 +2,10 @@
   "@context": "http://schema.org",
   "@explicit": true,
   "@requireAll": false,
-  "@type": [
-    "Organization",
-    "Person"
-  ],
+  "@type": {},
   "name": {},
   "url": {},
   "sameAs": {},
-  "aditionalType": {}
+  "additionalType": {},
+  "addressCountry": {}
 }
