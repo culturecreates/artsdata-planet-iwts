@@ -1,0 +1,13 @@
+{
+  "@context": "http://schema.org",
+  "@explicit": true,
+  "@requireAll": false,
+  "@type": [
+    "Organization",
+    "Person"
+  ],
+  "name": {},
+  "url": {},
+  "sameAs": {},
+  "aditionalType": {}
+}
