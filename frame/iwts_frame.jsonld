@@ -5,13 +5,16 @@
       "is_flagged_for_review": {
         "@id": "http://kg.artsdata.ca/ontology/is_flagged_for_review",
         "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "artsdata_uri":{
+        "@id": "http://schema.org/sameAs"
       }
     }
   ],
   "@explicit": true,
   "@requireAll": false,
   "@type": {},
-  "omitDefault": true,
+  "@omitDefault": true,
   "name": {},
   "url": {},
   "sameAs": {},
