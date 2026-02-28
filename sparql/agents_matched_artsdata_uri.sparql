@@ -25,7 +25,7 @@ where {
                     ?agent schema:workLocation/schema:address/schema:addressCountry ?country .
                 }
             }
-        } limit 5000 offset 0
+        } limit 10 offset 0
     }
     ?agent a dbo:Agent .
     OPTIONAL {
