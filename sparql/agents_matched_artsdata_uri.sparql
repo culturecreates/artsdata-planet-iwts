@@ -11,24 +11,20 @@ construct {
     ado:FlaggedForReview  ?is_flagged_for_review .
 }
 where {
-    {
-        select * where {
-            graph <http://kg.artsdata.ca/culture-creates/artsdata-planet-iwts/iwts-ca> {
-                ?agent a ?type ;
-                schema:name ?name .
-                OPTIONAL {
-                    ?agent   schema:url ?url .
-                }
-                OPTIONAL {
-                    ?agent schema:location/schema:address/schema:addressCountry ?country .
-                }
-                OPTIONAL {
-                    ?agent schema:workLocation/schema:address/schema:addressCountry ?country .
-                }
-            }
-        } limit 10 offset 0
-    }
     ?agent a dbo:Agent .
+    graph <http://kg.artsdata.ca/culture-creates/artsdata-planet-iwts/iwts-ca> {
+        ?agent a ?type ;
+        schema:name ?name .
+        OPTIONAL {
+            ?agent   schema:url ?url .
+        }
+        OPTIONAL {
+            ?agent schema:location/schema:address/schema:addressCountry ?country .
+        }
+        OPTIONAL {
+            ?agent schema:workLocation/schema:address/schema:addressCountry ?country .
+        }
+    }
     OPTIONAL {
         graph <http://kg.artsdata.ca/core> {
             ?agent schema:sameAs ?artsdata_uri .
@@ -40,4 +36,4 @@ where {
             BIND(true as ?is_flagged_for_review)
         }
     }
-}
+} limit 10 offset 0
