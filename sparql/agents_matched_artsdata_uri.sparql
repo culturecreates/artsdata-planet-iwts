@@ -1,13 +1,14 @@
 PREFIX dbo: <http://dbpedia.org/ontology/>
 PREFIX schema: <http://schema.org/>
 PREFIX ado: <http://kg.artsdata.ca/ontology/>
+PREFIX ex: <http://example.org/>
 construct {
     ?agent a ?type ;
     schema:name ?name ;
     schema:url ?url ;
     schema:addressCountry ?country ;
-    schema:sameAs ?artsdata_uri ;
-    ado:is_flagged_for_review   ?is_flagged_for_review .
+    ex:artsdata_uri ?artsdata_uri ;
+    ado:FlaggedForReview  ?is_flagged_for_review .
 }
 where {
     {
