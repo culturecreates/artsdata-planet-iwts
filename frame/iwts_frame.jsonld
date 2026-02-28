@@ -6,7 +6,10 @@
         "@id": "http://kg.artsdata.ca/ontology/is_flagged_for_review",
         "@type": "http://www.w3.org/2001/XMLSchema#boolean"
       },
-      "artsdata_uri": "http://example.org/artsdata_uri"
+      "artsdata_uri": {
+        "@id": "http://kg.artsdata.ca/ontology/artsdata_uri",
+        "@type": "@id"
+      }
     }
   ],
   "@explicit": true,
