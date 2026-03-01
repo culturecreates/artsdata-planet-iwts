@@ -37,5 +37,5 @@
   "is_flagged_for_review": {
     "@omitDefault": true
   },
-  "addressCountry": {}
+  "country": {}
 }
