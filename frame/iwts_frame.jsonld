@@ -18,6 +18,14 @@
       "url": {
         "@id": "http://schema.org/url",
         "@type": "@id"
+      },
+      "uri": {
+        "@id": "@id",
+        "@type": "@id"
+      },
+      "type": {
+        "@id": "@type",
+        "@type": "@id"
       }
     }],
   "@explicit": true,
