@@ -9,7 +9,7 @@
         "@id": "http://schema.org/sameAs",
         "@type": "@id"
       },
-      "addressCountry": {
+      "country": {
         "@id": "http://schema.org/addressCountry"
       },
       "name": {
