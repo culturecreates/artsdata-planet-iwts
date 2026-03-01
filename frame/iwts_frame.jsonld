@@ -1,17 +1,25 @@
 {
   "@context": [
-    "http://schema.org",
     {
       "is_flagged_for_review": {
-        "@id": "http://kg.artsdata.ca/ontology/is_flagged_for_review",
+        "@id": "http://schema.org/additionalType",
         "@type": "http://www.w3.org/2001/XMLSchema#boolean"
       },
       "artsdata_uri": {
-        "@id": "http://kg.artsdata.ca/ontology/artsdata_uri",
+        "@id": "http://schema.org/sameAs",
+        "@type": "@id"
+      },
+      "addressCountry": {
+        "@id": "http://schema.org/addressCountry"
+      },
+      "name": {
+        "@id": "http://schema.org/name"
+      },
+      "url": {
+        "@id": "http://schema.org/url",
         "@type": "@id"
       }
-    }
-  ],
+    }],
   "@explicit": true,
   "@requireAll": false,
   "@type": {},
