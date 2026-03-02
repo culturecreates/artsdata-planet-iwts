@@ -15,7 +15,7 @@ Artsdata --> IWTS
 
 IWTS can call the Artsdata Query API to get Artsdata URIs mapped to IWTS agents (people/organizations):
 
-https://api.artsdata.ca/query?format=json&limit=2000&frame=https://raw.githubusercontent.com/culturecreates/artsdata-planet-iwts/refs/heads/main/frame/iwts_frame.jsonld&sparql=https://raw.githubusercontent.com/culturecreates/artsdata-planet-iwts/refs/heads/main/sparql/agents_matched_artsdata_uri.sparql
+https://api.artsdata.ca/query?format=json&limit=500&frame=https://raw.githubusercontent.com/culturecreates/artsdata-planet-iwts/refs/heads/main/frame/iwts_frame.jsonld&sparql=https://raw.githubusercontent.com/culturecreates/artsdata-planet-iwts/refs/heads/main/sparql/agents_matched_artsdata_uri.sparql
 
 NOTE: There is a max limit of 500. To get the next page of results use offset=500, then offset=1000 and so on.
 
