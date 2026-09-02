@@ -36,6 +36,15 @@ jobs:
       - name: Update additional types
         run: python3 script.py iwts_data.json mapping.json
 
+      - name: Debug fetched files
+        run: |
+          echo "--- config.json (first 20 lines) ---"
+          head -n 20 config.json
+          echo "--- validate config.json ---"
+          jq empty config.json && echo "config.json is valid JSON" || echo "config.json is INVALID JSON"
+          echo "--- iwts_data.json shape ---"
+          jq 'if type=="array" then "array of \(length) items, keys: \(.[0]|keys)" else "not an array: \(type)" end' iwts_data.json
+          
       - name: Transform into RDF
         run: |
               mkdir -p outputs
