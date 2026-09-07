@@ -26,7 +26,14 @@ jobs:
 
       - name: Fetch entities
         run: |
-            curl https://iwanttoshowcase.ca/apiiwts.php?api_key=${{secrets.APIIWTS_KEY}} -o iwts_data.json
+          curl https://iwanttoshowcase.ca/apiiwts.php?api_key=${{secrets.APIIWTS_KEY}} -o iwts_data.json
+          if [ ! -s iwts_data.json ]; then
+            echo "Error: iwts_data.json is empty"
+            cat iwts_data.json
+            exit 1
+          fi
+          # Validate JSON
+          jq empty iwts_data.json || exit 1
 
       - name: Fetch additional type mapping and python script
         run: |
@@ -38,8 +45,8 @@ jobs:
 
       - name: Debug fetched files
         run: |
-          echo "--- config.json (first 20 lines) ---"
-          head -n 20 config.json
+          echo "--- config.json (first 100 lines) ---"
+          head -n 100 config.json
           echo "--- validate config.json ---"
           jq empty config.json && echo "config.json is valid JSON" || echo "config.json is INVALID JSON"
           echo "--- iwts_data.json shape ---"
