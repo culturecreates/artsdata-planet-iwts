@@ -20,6 +20,18 @@ jobs:
       - name: Run ontorefine server
         run: /opt/ontorefine/dist/bin/ontorefine &
 
+      - name: Wait for ontorefine server
+        run: |
+          for i in $(seq 1 30); do
+            if curl --output /dev/null --silent --head --fail http://localhost:7333; then
+              exit 0
+            fi
+            sleep 1
+          done
+
+          echo "OntoRefine did not become ready on http://localhost:7333" >&2
+          exit 1
+
       - name: Download project-configuration-file
         run: | 
           curl 'https://raw.githubusercontent.com/${{github.repository}}/${{github.ref}}/ontorefine-config.json' >> config.json
@@ -101,5 +113,4 @@ jobs:
           artifact: iwts-ca
           publisher: "${{ secrets.PUBLISHER_URI_GREGORY }}"
           downloadUrl: https://raw.githubusercontent.com/culturecreates/artsdata-planet-iwts/main/outputs/iwts_data.ttl
-
 
